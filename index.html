@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óptica Plus</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Óptica Plus</h1>
+    <p class="biografia">A Óptica Plus oferece a você qualidade e estilo com os melhores óculos e lentes. Nosso compromisso é proporcionar visão clara e conforto em cada modelo.</p>
+
+   
+    <div class="pesquisa-container">
+        <input type="text" id="pesquisa" placeholder="Pesquise os modelos..." onkeyup="filtrarModelos()">
+    </div>
+</header>
+
+
+<div class="whatsapp-icon">
+    <a href="https://wa.me/551112345678" target="_blank">
+        <i class="fab fa-whatsapp"></i> Fale conosco no WhatsApp
+    </a>
+</div>
+
+<section>
+    <h2>Modelos de Óculos</h2>
+    <div class="modelos">
+        <div class="modelo">
+            <h3>Modelo 1 - Classic</h3>
+            <img src="c:\Users\evilin.contreira\Downloads\oculos classico.png" alt="Óculos Classic">
+            <p>Óculos com design clássico e confortável.</p>
+            <p><strong>Preço: R$ 350,00</strong></p>
+        </div>
+        <div class="modelo">
+            <h3>Modelo 2 - Sport</h3>
+            <img src="c:\Users\evilin.contreira\Downloads\esportivo.png" alt="Óculos Sport">
+            <p>Óculos ideal para atividades esportivas.</p>
+            <p><strong>Preço: R$ 280,00</strong></p>
+        </div>
+        <div class="modelo">
+            <h3>Modelo 3 - Fashion</h3>
+            <img src="c:\Users\evilin.contreira\Downloads\fashion.png" alt="Óculos Fashion">
+            <p>Óculos modernos e estilosos para o dia a dia.</p>
+            <p><strong>Preço: R$ 450,00</strong></p>
+        </div>
+        <div class="modelo">
+            <h3>Modelo 4 - Retro</h3>
+            <img src="c:\Users\evilin.contreira\Downloads\retro.png" alt="Óculos Retro">
+            <p>Design retrô com um toque de sofisticação.</p>
+            <p><strong>Preço: R$ 400,00</strong></p>
+        </div>
+        <div class="modelo">
+            <h3>Modelo 5 - Luxury</h3>
+            <img src="c:\Users\evilin.contreira\Downloads\luxury.png" alt="Óculos Luxury">
+            <p>Óculos de luxo para quem procura exclusividade.</p>
+            <p><strong>Preço: R$ 850,00</strong></p>
+        </div>
+        <div class="modelo">
+            <h3>Modelo 6 - Kids</h3>
+            <img src="c:\Users\evilin.contreira\Downloads\kids.png" alt="Óculos Kids">
+            <p>Óculos coloridos e resistentes para crianças.</p>
+            <p><strong>Preço: R$ 180,00</strong></p>
+        </div>
+       
+        <div class="modelo">
+            <h3>Modelo 7 - Personalizado</h3>
+            <img src="c:\Users\evilin.contreira\Downloads\personaliizado.png" alt="Óculos Personalizado">
+            <p>Crie seu óculos com a sua escolha de materiais e cores. Ideal para quem busca um design exclusivo e único.</p>
+            <p><strong>Preço: R$ 600,00</strong></p>
+        </div>
+       
+        <div class="modelo">
+            <h3>Modelo 8 - Simples</h3>
+            <img src="c:\Users\evilin.contreira\Pictures\simples.png" alt="Óculos Simples">
+
+            <p>Óculos de design simples e funcional, ideal para o uso diário.</p>
+            <p><strong>Preço: R$ 200,00</strong></p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Planos de Manutenção</h2>
+    <div class="planos">
+        <div class="plano">
+            <h3>Plano Mensal</h3>
+            <p>Acesso a serviços básicos de manutenção todo mês.</p>
+            <p><strong>Preço: R$ 50,00/mês</strong></p>
+        </div>
+        <div class="plano">
+            <h3>Plano Anual</h3>
+            <p>Acesso completo aos serviços de manutenção por 12 meses.</p>
+            <p><strong>Preço: R$ 500,00/ano</strong></p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Preços de Exames</h2>
+    <div class="precos">
+        <div class="preco">
+            <h3>Exame de Vista Completo</h3>
+            <p><strong>R$ 120,00</strong></p>
+        </div>
+        <div class="preco">
+            <h3>Teste de Acuidade Visual</h3>
+            <p><strong>R$ 50,00</strong></p>
+        </div>
+        <div class="preco">
+            <h3>Consulta com Especialista</h3>
+            <p><strong>R$ 150,00</strong></p>
+        </div>
+    </div>
+</section>
+
+<section class="contato">
+    <h3>Contato</h3>
+    <p>Tem alguma dúvida ou quer saber mais sobre nossos produtos e serviços? Entre em contato conosco!</p>
+    <p><strong>Telefone:</strong> (11) 1234-5678</p>
+    <p><strong>Email:</strong> contato@opticaplus.com.br</p>
+    <p><strong>Endereço:</strong> Rua General Gomes, 123, São Paulo - SP</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Óptica Plus - Todos os direitos reservados</p>
+</footer>
+
+<script>
+
+function filtrarModelos() {
+    var input = document.getElementById("pesquisa");
+    var filtro = input.value.toUpperCase();
+    var modelos = document.querySelectorAll(".modelo");
+
+    modelos.forEach(function(modelo) {
+        var nomeModelo = modelo.getElementsByTagName("h3")[0].textContent || modelo.getElementsByTagName("h3")[0].innerText;
+        if (nomeModelo.toUpperCase().indexOf(filtro) > -1) {
+            modelo.style.display = "";
+        } else {
+            modelo.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>

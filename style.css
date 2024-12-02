@@ -1,0 +1,120 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #A2CFFE; /* Cor azul bebê */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header .biografia {
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: lighter;
+}
+
+section {
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #A2CFFE; /* Cor azul bebê */
+    text-align: center;
+}
+
+.modelos, .planos, .precos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.modelo, .plano, .preco {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modelo:hover, .plano:hover, .preco:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.modelo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+    color: #A2CFFE; /* Cor azul bebê */
+}
+
+.contato {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #A2CFFE; /* Cor azul bebê */
+    color: white;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .modelos, .planos, .precos {
+        grid-template-columns: 1fr;
+    }
+}
